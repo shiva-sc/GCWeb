@@ -1,0 +1,28 @@
+---
+{
+	"layout": "core",
+	"altLangPage": "main-element-fr.html",
+	"dateModified": "2023-08-29",
+	"description": "Scaffolding example of the main element.",
+	"language": "en",
+	"title": "The main element - Scaffolding example"
+}
+---
+
+{%- include variable-core.liquid -%}
+{%- capture page-title -%}
+    {%- if page.titleH1 -%}
+        {{ page.titleH1 }}
+    {%- elsif page.title -%}
+        {{ page.title }}
+    {%- else -%}
+        Page untitled
+    {%- endif -%}
+{%- endcapture -%}
+
+<div class="wb-prettify all-pre hide"></div>
+
+<main>
+	<h1>The <code>main</code> element, Scaffolding example</li>
+	<p><a href="grouping-en.html#main-element">Return to the main element scaffolding documentation</a></p>
+</main>
